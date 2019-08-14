@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+    <name>Webmu_DisableAutoInvoice</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL 3.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Capture the payment for the order without create the invoice.</summary>
+    <description>In some cases it may be necessary to capture the amount of the order without creating an invoice. This module allows you to capture payment by credit card while maintaining the other operations.&#xD;
+&#xD;
+You can then create an invoice of the order from the backend.</description>
+    <notes>Release notes:&#xD;
+&#xD;
+v. 0.1.0&#xD;
+- initial public release of Disable Auto Invoice</notes>
+    <authors><author><name>Webmu</name><user>webmu</user><email>info@webmu.it</email></author></authors>
+    <date>2016-02-18</date>
+    <time>14:07:19</time>
+    <contents><target name="magecommunity"><dir name="Webmu"><dir name="DisableAutoInvoice"><dir name="Helper"><file name="Data.php" hash="81d5fd053c0e017a699f0587c09cc7b8"/></dir><dir name="Model"><dir name="Sales"><dir name="Order"><file name="Payment.php" hash="7081a19d1c4ee209f83f6a6aac895a8e"/></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="5fdb62808a78e7e4f2126b80e6841980"/><file name="config.xml" hash="21474094d7a89ee5ae88116e3a1a50e6"/><file name="system.xml" hash="a6d8a2a897d4e7d98fbac0717ea26ed2"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Webmu_DisableAutoInvoice.xml" hash="0440f3b5e18d5cca43aa365de7316eef"/></dir></target><target name="magelocale"><dir name="en_US"><file name="Webmu_DisableAutoInvoice.csv" hash="bd7dbd60d1198f73b06af578ec471f99"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

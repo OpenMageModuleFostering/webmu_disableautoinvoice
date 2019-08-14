@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+    	<Webmu_DisableAutoInvoice>
+			<version>0.1.0</version>
+		</Webmu_DisableAutoInvoice>
+	</modules>
+	<global>
+    	<helpers>
+      		<disableautoinvoice>
+        		<class>Webmu_DisableAutoInvoice_Helper</class>
+      		</disableautoinvoice>
+		</helpers>
+		<models>
+	  		<disableautoinvoice>
+				<class>Webmu_DisableAutoInvoice_Model</class>
+				<resourceModel>disableautoinvoice_mysql4</resourceModel>
+	  		</disableautoinvoice>
+			<sales>
+				<rewrite>
+					<order_payment>Webmu_DisableAutoInvoice_Model_Sales_Order_Payment</order_payment>
+				</rewrite>
+			</sales>
+		</models>
+	</global>
+	<default>
+		<disableautoinvoice>
+			<general>                
+				<status>1</status>         
+			</general>      
+		</disableautoinvoice>
+	</default>
+</config> 

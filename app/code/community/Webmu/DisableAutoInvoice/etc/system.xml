@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+		<webmu translate="label" module="disableautoinvoice">
+        	<label>WEBMU EXTENSIONS</label>
+            <sort_order>1600</sort_order>
+        </webmu>
+	</tabs>
+	<sections>
+		<disableautoinvoice  translate="label" module="disableautoinvoice">                    
+			<label>Disable Auto Invoice</label>
+			<tab>webmu</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>1111</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>0</show_in_website>
+			<show_in_store>0</show_in_store>            
+			<groups>
+				<general translate="label"> 
+					<label>Disable Auto Invoice Settings</label>
+					<frontend_type>text</frontend_type>
+					<expanded>1</expanded>
+					<sort_order>10</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>0</show_in_website>
+					<show_in_store>0</show_in_store>
+					<fields>
+						<status translate="label">
+							<label>Enabled</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</status>
+					</fields>
+				</general>
+			</groups>
+		</disableautoinvoice>
+	</sections>
+</config>
