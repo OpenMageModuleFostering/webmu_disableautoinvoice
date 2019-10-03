@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Webmu_DisableAutoInvoice",
+    "name": "OpenMageModuleFostering\/Webmu_DisableAutoInvoice",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL-3.0)",
     "homepage": "",
     "description": "Capture the payment for the order without create the invoice.",
     "authors": [
-    {
-        "name": "Webmu",
-        "email": "info@webmu.it"
-    }
-],
+        {
+            "name": "Webmu",
+            "email": "info@webmu.it"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
